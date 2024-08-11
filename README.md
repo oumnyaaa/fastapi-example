@@ -52,24 +52,6 @@ If you want to customize the application before deployment, follow these steps:
 
 CloudStation uses Nixpacks, a build system that automatically detects the programming language and framework of your application. For this FastAPI application, Nixpacks identifies it as a Python project and manages the entire build process seamlessly.
 
-#### Port Configuration
-
-CloudStation allows you to configure the port for your application through the deployment interface. Here's how to set it up:
-
-1. In the deployment settings, click on "Add New Network" under the Networks section.
-2. In the "Network Configuration" modal that appears:
-   - Set the port to 8000 (default for FastAPI applications).
-   - The "Public Networking" field will be automatically populated (e.g., "fastapi-books.cloud-station.app").
-   - You can add a custom domain if desired.
-   - Ensure the "Public" toggle is enabled if you want your application to be publicly accessible.
-   - Set up the Health Check parameters:
-     - Protocol: HTTP
-     - Path: /
-     - Timeout: 30s
-     - HC Port: 8000
-
-These settings ensure that your FastAPI application runs on the correct port and is properly configured for CloudStation's environment.
-
 ### Access Your Application
 
 Once deployed, your application will be accessible at https://fastapi-books.cloud-station.app.
